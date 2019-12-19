@@ -40,7 +40,7 @@ $('#go').click(
             
                 
         }else{
-            $('#alert').html("Papan akan terbuat jika skala 1 s/d 10")
+            $('#alert').html("Board scale must be 1 to 10")
             $('#alert').fadeIn(300)
         }
         
@@ -132,7 +132,7 @@ function btnBoxClicked(v)
             traverseFromRightT === true ||
             traverseFromRightB === true) {
 
-            $('#alert').html(p+" menang !")
+            $('#alert').html(p+" win !")
             $('#alert').fadeIn(300)
 
             for (let index = 0; index < btn_box.length; index++) {
@@ -172,14 +172,9 @@ function isP2(n, v) {
             }
         }
 
-        let btnShouldClicked = availableBox[0];
+        let v = availableBox[Math.floor(Math.random() * availableBox.length)];
 
-        btnBoxClicked(btnShouldClicked)
- }
-
- function checkingXval()
- {
-    return document.querySelector('.X').id
+        btnBoxClicked(v)
  }
 
  function checkTraverseFromRightBottom(p, v)
