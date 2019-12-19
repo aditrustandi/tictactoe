@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Satisfy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bowlby+One+SC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Acme&display=swap" rel="stylesheet">
+
+    <title>TIC TAC TOE</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="toolbar">
+        <h2 class="style1">TIC TAC TOE</h2>
+        <div class="form-filter">
+            <span class="label">Dimensi Papan ?</span> <input id="dimensi-box" type="number" value="3" placeholder="Dimensi Box"> |
+            <span class="label">Lawan ?</span><select id="versus">
+                <option value="MULTIPLAYER">Player lain</option>
+                <option value="COMPUTER">Computer</option>
+            </select>
+            <button id="go" class="btn-submit">Go !</button>
+        </div>
+    </div>
+
+    <div id="alert"></div>
+
+    <div id="wrapper" class="container">
+        <div id="welcome">
+            <p class="style2" style="margin-bottom: 0px;">Ayo Main !</p>
+            <p class="style1 custom_title">TIC TAC TOE</p>
+
+            <span>Atur dimensi papan di form bagian atas yaa :)</span>
+        </div>
+    </div>
+
+<input type="text" id="versus_key" hidden>
+</body>
+<script src="js/jquery.min.js"></script>
+<script src="js/main.js"></script>
+</html>
