@@ -42,11 +42,19 @@ body{
     background: #fff;
     height: 80px;
     width: 80px;
-    font-size: 60px;
     box-shadow: 1px 0px 9px #fff;
     border: 1px solid #807e7e;
     font-weight: 500;
     margin: 3px;
+    font-size: 60px;
+}
+
+#wrapper{
+    padding: 20px;
+}
+
+.btn-wrap{
+    display: flex;
 }
 
 #alert{
